@@ -29,13 +29,13 @@ export const Wrapper = styled.div`
 		color: #00092c;
 	}
 	.score {
-		color: #fff;
+		color: #f3e9dd;
 		font-size: 2rem;
 		margin: 0;
 	}
 	h1 {
 		font-family: 'Roboto Mono', monospace;
-		color: #fff;
+		color: #f3e9dd;
 		background-size: 100%;
 		background-clip: text;
 		-webkit-background-clip: text;
