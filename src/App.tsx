@@ -31,7 +31,7 @@ function App() {
 
 		const newQuestions = await fetchQuizQuestions(
 			TOTAL_QUESTIONS,
-			Difficulty.Easy,
+			Difficulty.Medium,
 		);
 
 		setQuestions(newQuestions);
@@ -93,7 +93,7 @@ function App() {
 				userAnswer.length === number + 1 &&
 				number !== TOTAL_QUESTIONS - 1 ? (
 					<button className='next' onClick={nextQuestion}>
-						NEXT QUESTION
+						NEXT
 					</button>
 				) : null}
 			</Wrapper>
