@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import Card from './Components/Card';
 import { Difficulty, fetchQuizQuestions, QuestionState } from './API';
 import { GlobalStyle, Wrapper } from './App.styles';
 import QuestionCard from './Components/Card';
@@ -14,15 +13,10 @@ function App() {
 	const TOTAL_QUESTIONS = 15;
 
 	const [loading, setLoading] = useState(false);
-
 	const [questions, setQuestions] = useState<QuestionState[]>([]);
-
 	const [number, setNumber] = useState(0);
-
 	const [userAnswer, setUserAnswer] = useState<AnswerObject[]>([]);
-
 	const [score, setScore] = useState(0);
-
 	const [gameOver, setGameOver] = useState(true);
 
 	const startTrivia = async () => {
@@ -75,7 +69,6 @@ function App() {
 						START
 					</button>
 				) : null}
-
 				{!gameOver ? <p className='score'>Score: {score}</p> : null}
 				{loading ? <p>Loading Questions...</p> : null}
 				{!loading && !gameOver && (
